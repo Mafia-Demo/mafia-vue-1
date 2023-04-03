@@ -6,6 +6,8 @@ jobs:
   build:
     name: submit pr
     runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ secrets.GH_TOKEN }}
     steps:
       - name: RelizaHub Build And Submit Release metadata action
         uses: relizaio/reliza-pr-action@1.0
