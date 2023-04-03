@@ -1,0 +1,15 @@
+on: [pull_request]
+
+name: PR Info
+
+jobs:
+  build:
+    name: submit pr
+    runs-on: ubuntu-latest
+    steps:
+      - name: RelizaHub Build And Submit Release metadata action
+        uses: relizaio/reliza-pr-action@1.0
+        with:
+         reliza_api_id: ${{ secrets.RELIZA_API_ID }}
+         reliza_api_key: ${{ secrets.RELIZA_API_KEY }}
+         reliza_api_url: https://test.relizahub.com
