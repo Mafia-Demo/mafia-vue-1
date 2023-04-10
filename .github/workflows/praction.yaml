@@ -10,7 +10,7 @@ jobs:
       GH_TOKEN: ${{ secrets.GH_TOKEN }}
     steps:
       - name: RelizaHub Build And Submit Release metadata action
-        uses: relizaio/reliza-pr-action@cf9007ff00f35846d13e86d18ec59fc34b68295c
+        uses: relizaio/reliza-pr-action@7778745
         with:
          reliza_api_id: ${{ secrets.RELIZA_API_ID }}
          reliza_api_key: ${{ secrets.RELIZA_API_KEY }}
